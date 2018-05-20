@@ -13,3 +13,10 @@
 printf "\x1b[${bg};2;${red};${green};${blue}m\n"
 printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
 ```
+
+
+https://github.com/iCyMind/NeoSolarized
+Solirized with NeoVim and true color terminals
+
+https://github.com/airblade/vim-gitgutter
+https://github.com/w0rp/ale
