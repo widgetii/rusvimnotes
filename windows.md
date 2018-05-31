@@ -17,6 +17,10 @@ gT - goto previous tab
 Вопросы:
 
 1) Как переименовывать табы в NVIM?
+https://github.com/koekeishiya/dotfiles/blob/master/nvim/init.vim#L96
+set guitablabel=%N/\ %t\ %M
+Но это будет работать только в GUI?
+
 2) Как номер вкладки установить, чтобы через {N}gt можно было быстро ходить? кол-во окон на вкладке - бесполезная информация
 
 

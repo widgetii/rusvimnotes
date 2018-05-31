@@ -2,8 +2,11 @@
 
 https://github.com/mhinz/editor-history
 
-Причина, по которой Билл Джой, автор редактора Vi, предшественника Vim, выбрал клавишу <Esc> для выхода между режимами, являлось то, что он работал на терминале [ADM-3A](https://en.wikipedia.org/wiki/ADM-3A) 
-Обратите внимание на расположение клавиш со стрелками на клавиатуре этого терминала.
+Причина, по которой Билл Джой, автор редактора Vi, предшественника
+Vim, выбрал клавишу <Esc> для выхода между режимами, являлось то,
+что он работал на терминале [ADM-3A](https://en.wikipedia.org/wiki/ADM-3A)
+Обратите внимание на расположение клавиш со стрелками на клавиатуре
+этого терминала.
 
 Вопросы (после прочтения статьи в википедии):
 
@@ -19,6 +22,7 @@ https://github.com/mhinz/editor-history
 https://csswizardry.com/2017/01/preparing-vim-for-apples-touch-bar/ Раздел Remap Other Keys
 
 [Исходники оригинального Vi](http://ex-vi.sourceforge.net/)
+[Исходники редактора Stevie, клон Vi, на котором базировался Vim](https://groups.google.com/forum/#!original/comp.sys.atari.st/J65TpLBhfss/Mop3jYhvuY0J)
 
 Вопросы
 
