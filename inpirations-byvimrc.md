@@ -1,3 +1,8 @@
+## Don't put anything in your .vimrc you don't understand!
+
+https://dougblack.io/words/a-good-vimrc.html
+
+
 https://github.com/Phantas0s/.dotfiles/blob/master/nvim/init.vim
 
 https://github.com/Phantas0s/idiomatic-vimrc
