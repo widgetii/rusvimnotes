@@ -53,6 +53,17 @@ set tabstop=4       " number of visual spaces per TAB
 здесь я использую указание, что каждый TAB у меня будет визуально занимать ровно
 4 знакоместа на моем экране.
 
+### Разные настройки для разных языков
+
+Можно воспользоваться автоматическими командами и выставить для каждого
+определенного языка собственные оступы. Пример для Go:
+
+```
+au FileType go set noexpandtab
+au FileType go set shiftwidth=4
+au FileType go set softtabstop=4
+au FileType go set tabstop=4
+```
 
 ### Ссылки
 

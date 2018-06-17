@@ -1,3 +1,6 @@
+[Stop the Tab
+Madness](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/)
+
 https://stackoverflow.com/questions/102384/using-vims-tabs-like-buffers
 
 :help tabpage.txt
