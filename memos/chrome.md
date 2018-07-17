@@ -12,10 +12,20 @@
 * `Cmd-M` - M for minimize. Это настоящая Boss-key, но работает только на macOS
 * `Cmd-N` - private mode
 * `Cmd-R` - reload page
+* `Cmd-T` - открыть новую вкладку
 * `Cmd-L` - переместить курсор на URL-bar
 * `Cmd-[-+]` - смена масштаба
 * `Cmd-0` - возвращает нормальный зум у страницы
 * `Cmd-D` - сохранить текущую страницу в закладки
 * `Cmd-,` - перейти в настройки, работает только на macOS
 * `Cmd-Shift-J` - перейти в окно загрузок
+* `Space` - пролистывание вниз на одну целую страницу
+* `Shift-Space` - тоже самое на страницу вперед
 
+## Немножечко автоматизации
+
+* Обновить вкладку `xdotool search --onlyvisible --class "Chrome" windowfocus
+    key 'ctrl+r'`
+* Открыть новую вкладку в Chrome: `xdotool windowactivate $(xdotool search
+    -title -- '- Google Chrome'); xdotool key --clearmodifiers ctrl+t`
+* 
