@@ -1,5 +1,7 @@
 ## Don't put anything in your .vimrc you don't understand!
 
+https://github.com/jbranchaud/til#vim
+
 https://github.com/hneutr/dotfiles/tree/master/config/nvim
 
 https://dougblack.io/words/a-good-vimrc.html
