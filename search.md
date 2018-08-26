@@ -8,3 +8,6 @@ Set global replacement as the default
 Substitute in a visual block
 Count the number of pattern matches
 
+## Замена длинных путей через :s
+
+`s,/usr/local/bin,/opt/bin,g`

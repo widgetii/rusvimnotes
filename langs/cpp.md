@@ -35,3 +35,4 @@ https://github.com/octol/vim-cpp-enhanced-highlight
 https://github.com/andreyorst/dotfiles/tree/master/.config/nvim
 посмотри тут еще, если deoplete-clang заменить на cquery должно быть огонь
 
+https://clang.llvm.org/extra/clangd.html
