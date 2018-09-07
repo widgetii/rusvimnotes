@@ -39,9 +39,7 @@ https://github.com/andreyorst/dotfiles/tree/master/.config/nvim
 посмотри тут еще, если deoplete-clang заменить на cquery должно быть огонь
 
 
-
-
-
 https://sakhnik.com/2017/08/20/nvim-gdb.html
 
 
+https://clang.llvm.org/extra/clangd.html
