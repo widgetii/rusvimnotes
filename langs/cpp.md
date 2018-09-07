@@ -1,3 +1,6 @@
+https://github.com/majutsushi/tagbar
+https://github.com/Kris2k/A.vim
+
 с сорцами linux страдал на neovim+cquery+deolete+ale+ultisnips, получилось плохо
 
 по Ycm: там не совсем конфиг. его 1 раз делаешь глобальным и правишь если надо. а в проекте нужно заставить систему сборки генерировать compile_commands.json, и в корне ссылку оставить. тогда ycm все поймет. также для нормальной поддержки cpp нужно скомпилировать сервер ycm с флагами
@@ -34,4 +37,11 @@ https://github.com/octol/vim-cpp-enhanced-highlight
 
 https://github.com/andreyorst/dotfiles/tree/master/.config/nvim
 посмотри тут еще, если deoplete-clang заменить на cquery должно быть огонь
+
+
+
+
+
+https://sakhnik.com/2017/08/20/nvim-gdb.html
+
 

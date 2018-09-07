@@ -2,6 +2,10 @@
 
 https://github.com/hneutr/dotfiles/tree/master/config/nvim
 
+https://github.com/sakhnik/dotfiles/blob/master/src/.vim/init.vim
+
+https://framagit.org/Midgard/dotfiles/blob/master/nvim-init.vim
+
 https://dougblack.io/words/a-good-vimrc.html
 
 https://github.com/junegunn/dotfiles/blob/master/vimrc
