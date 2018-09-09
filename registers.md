@@ -22,3 +22,9 @@ https://www.brianstorti.com/vim-registers/
 `cat ~/Downloads/certnew.p7b | xsel -i -b`
 
 https://github.com/svermeulen/vim-easyclip
+
+## Рассмотреть подход с 52 протоколом
+
+https://github.com/neovim/neovim/issues/8450
+
+https://github.com/mobile-shell/mosh/issues/637

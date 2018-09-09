@@ -1,5 +1,13 @@
 ## Модификация клавиатуры под себя в macOS
 
+### Средства операционной системы
+
+Как можно бороться с неудобной клавишей <Esc>?
+
+https://csswizardry.com/2017/01/preparing-vim-for-apples-touch-bar/ Раздел Remap Other Keys
+
+### Karabiner-Elements
+
 Для удобства маппинга клавиш и управления правилами мы можем воспользоваться
 новой утилитой
 [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements), которая
