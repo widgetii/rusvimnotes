@@ -27,5 +27,7 @@ specified by what is prepended:
 
 http://learnvimscriptthehardway.stevelosh.com/chapters/17.html
 
+https://www.ibm.com/developerworks/library/l-vim-script-2/index.html
+
 https://gabri.me/blog/diy-vim-statusline/
 
