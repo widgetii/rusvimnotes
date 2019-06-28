@@ -1,3 +1,7 @@
+# AutoHotkey
+
+## Рецепты
+
 ### Работа CapsLock как Ctrl/Escape
 
 https://gist.github.com/sedm0784/4443120
@@ -8,17 +12,17 @@ https://gist.github.com/sedm0784/4443120
 
 ```
 SetDefaultKeyboard(LocaleID){
-	Static SPI_SETDEFAULTINPUTLANG := 0x005A, SPIF_SENDWININICHANGE := 2
-	
-	Lan := DllCall("LoadKeyboardLayout", "Str", Format("{:08x}", LocaleID), "Int", 0)
-	VarSetCapacity(binaryLocaleID, 4, 0)
-	NumPut(LocaleID, binaryLocaleID)
-	DllCall("SystemParametersInfo", "UInt", SPI_SETDEFAULTINPUTLANG, "UInt", 0, "UPtr", &binaryLocaleID, "UInt", SPIF_SENDWININICHANGE)
-	
-	WinGet, windows, List
-	Loop % windows {
-		PostMessage 0x50, 0, % Lan, , % "ahk_id " windows%A_Index%
-	}
+    Static SPI_SETDEFAULTINPUTLANG := 0x005A, SPIF_SENDWININICHANGE := 2
+
+    Lan := DllCall("LoadKeyboardLayout", "Str", Format("{:08x}", LocaleID), "Int", 0)
+    VarSetCapacity(binaryLocaleID, 4, 0)
+    NumPut(LocaleID, binaryLocaleID)
+    DllCall("SystemParametersInfo", "UInt", SPI_SETDEFAULTINPUTLANG, "UInt", 0, "UPtr", &binaryLocaleID, "UInt", SPIF_SENDWININICHANGE)
+
+    WinGet, windows, List
+    Loop % windows {
+        PostMessage 0x50, 0, % Lan, , % "ahk_id " windows%A_Index%
+    }
     }
 
 LWin::SetDefaultKeyboard(0xa0000409)
@@ -38,10 +42,17 @@ Send, {Space}
 return
 ```
 
+### Привычные Emacs-like хоткеи в Chrome
+
+https://superuser.com/questions/1253772/unix-shortcuts-on-windows-ctrl-p-ctrl-n-ctrl-f
+
+### Источники вдохновения ваших AutoHotkey файлов
+
+https://github.com/rhysd/dogfiles/blob/master/AutoHotkey.ahk
+
 ### Краткий FAQ по AutoHotkey
 
-#### Как избежать проблем с отключением скриптов в приложениях, запущенных с
-правами админа?
+#### Как избежать проблем с отключением скриптов в приложениях, запущенных с правами админа
 
 Допустим, мы залогинились в компьютер и запустили свой скрипт прямо с рабочего
 стола. Клавиши перемапились и мы довольные идем работать. В процессе запускается
