@@ -1,6 +1,6 @@
 # AutoHotkey
 
-## Рецепты
+## Рецепты v2.0
 
 ### Работа CapsLock как Ctrl/Escape
 
@@ -8,38 +8,29 @@ https://gist.github.com/sedm0784/4443120
 
 ### Идемпотентное переключение раскладки
 
-Используем AutoHotkey:
-
 ```
-SetDefaultKeyboard(LocaleID){
-    Static SPI_SETDEFAULTINPUTLANG := 0x005A, SPIF_SENDWININICHANGE := 2
+ru := DllCall("LoadKeyboardLayout", "Str", "00000419", "Int", 1)
+en := DllCall("LoadKeyboardLayout", "Str", "a0000409", "Int", 1)
 
-    Lan := DllCall("LoadKeyboardLayout", "Str", Format("{:08x}", LocaleID), "Int", 0)
-    VarSetCapacity(binaryLocaleID, 4, 0)
-    NumPut(LocaleID, binaryLocaleID)
-    DllCall("SystemParametersInfo", "UInt", SPI_SETDEFAULTINPUTLANG, "UInt", 0, "UPtr", &binaryLocaleID, "UInt", SPIF_SENDWININICHANGE)
+SetLayout(language)
+{
+   Static on := False
+   WM_INPUTLANGCHANGEREQUEST := 0x50
+   PostMessage WM_INPUTLANGCHANGEREQUEST, 0, language,, ControlGetFocus('A') || WinExist('A')
+}
 
-    WinGet, windows, List
-    Loop % windows {
-        PostMessage 0x50, 0, % Lan, , % "ahk_id " windows%A_Index%
-    }
-    }
-
-LWin::SetDefaultKeyboard(0xa0000409)
-
-RWin::SetDefaultKeyboard(0x0419)
+LWin::SetLayout(en)
+RWin::SetLayout(ru)
 ```
 
 Обратите внимание, что это конфигурация моей машины, как адепта Colemak, поэтому
-для вашего случая строка переключения на английский язык может выглядеть иначе:
-`LWin::SetDefaultKeyboard(0x0409)`
+для вашего случая строка-идентификатор английского языка может выглядеть иначе:
+`"00000409"`
 
 ### Хочу, чтобы пробел+Alt давал пробел, а не переключал язык
 
 ```
-#Space::
-Send, {Space}
-return
+#Space::Send "{Space}"
 ```
 
 ### Привычные Emacs-like хоткеи в Chrome
